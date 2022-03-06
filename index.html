@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1> Personal Library</h1>
+        <div class="addbook"><button type="button" class="addbookbutton">Add book +</button></div>
+        <div class="books">
+            <div class="book" style = "display:none">
+                <div class="content">
+                    <div class="headings">
+                        <div class="name">Name:-</div>
+                        <div class="author">Author:-</div>
+                        <div class="pages">Pages:-</div>
+                    </div>
+                    <div class="values">
+                        <div class="name">Atomic habits</div>
+                        <div class="author">James Clear</div>
+                        <div class="pages">200</div>
+                    </div>
+                </div>
+                <input type="button" class="read" value="Reading">
+                <input type="button" class="clear" value="Remove">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="form hide">
+        <div class="mainform">
+            <div class="inputs">
+                <div class="entry">
+                    <label for="bookname">Book Name</label>
+                    <label for="authorname">Author</label>
+                    <label for="page">Pages</label>
+                    <label for="check">Reading</label>
+                </div>
+                <div class="value_input">
+                    <input type="text" id="bookname" name="bookname" required>
+                    <input type="text" id="authorname" name="authorname" required>
+                    <input type="number" id="page" min="0" name="page" required>
+                        <input type="checkbox" value="read" id="check" name="check" required>
+                </div>
+            </div>
+            <input type="submit" value="submit" class="submit">
+        </div>
+    </div>
+</body>
+</html>
